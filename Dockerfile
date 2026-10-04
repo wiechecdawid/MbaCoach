@@ -4,11 +4,11 @@ WORKDIR /source
 
 RUN apk add --no-cache clang build-base zlib-dev
 
-COPY src/MbaCoachBot/*.csproj ./src/MbaCoachBot/
-WORKDIR /source/src/MbaCoachBot
+COPY src/MbaCoach/*.csproj ./src/MbaCoach/
+WORKDIR /source/src/MbaCoach
 RUN dotnet restore -r linux-musl-x64
 
-COPY src/MbaCoachBot/ ./
+COPY src/MbaCoach/ ./
 RUN dotnet publish -r linux-musl-x64 -c Release -o /app --no-restore
 
 # Runtime Stage
@@ -23,9 +23,9 @@ RUN adduser -u 1000 -D appuser && \
 
 USER appuser
 
-COPY --from=build --chown=appuser:appuser /app/MbaCoachBot ./MbaCoachBot
+COPY --from=build --chown=appuser:appuser /app/MbaCoach ./MbaCoach
 
 ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1 \
     TMPDIR=/app/temp
 
-ENTRYPOINT ["./MbaCoachBot"]
+ENTRYPOINT ["./MbaCoach"]

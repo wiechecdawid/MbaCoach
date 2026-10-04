@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="src/MbaCoach/MbaCoach.csproj" />
+  <Folder Name="/src/">
+    <Project Path="src/MbaCoach/MbaCoach.csproj" />
+  </Folder>
 </Solution>

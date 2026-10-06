@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using MbaCoach.Services;
 using NetCord;
 using NetCord.Gateway;
 
@@ -12,13 +13,15 @@ GatewayClient client = new(new BotToken(token), new GatewayClientConfiguration
 {
     Intents = GatewayIntents.GuildMessages | GatewayIntents.MessageContent
 });
+GeminiService gService = new();
 
 client.MessageCreate += async m =>
 {
-    if (m.Content == "!ping")
-    {
-        await m.ReplyAsync($"Pong! {teamName}");
-    }
+    if (m.Author.IsBot) return;
+    
+    var response = await gService.GetResponse(m.Content);
+    await m.ReplyAsync(response);
+  
 };
 await client.StartAsync();
 await Task.Delay(-1);

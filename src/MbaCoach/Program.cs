@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Net.Http;
 using System.Threading.Tasks;
-using MbaCoach.Clients;
 using MbaCoach.Services;
 using NetCord;
 using NetCord.Gateway;

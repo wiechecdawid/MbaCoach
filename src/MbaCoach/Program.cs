@@ -4,6 +4,7 @@ using MbaCoach.Services;
 using NetCord;
 using NetCord.Gateway;
 
+const string HttpBaseUri = "https://hoopengine.liga.mba/api/v1";
 var token = Environment.GetEnvironmentVariable("DISCORD_TOKEN")
             ?? throw new InvalidOperationException("Missing environment variable 'DISCORD_TOKEN'");
 var teamName = Environment.GetEnvironmentVariable("HOOPENGINE_TEAM_NAME")

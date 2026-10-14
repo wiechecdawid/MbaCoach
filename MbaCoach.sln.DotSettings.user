@@ -1,6 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=da4df4e7_002D8abd_002D4fdd_002Da22e_002Da1a60938e832/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_ReturnItemsList_WhenRequestCalled" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bd03496a_002D6a41_002D4367_002Da8f2_002Ddf66d0bedcb4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SearchClientTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.SearchClientTests.Should_ReturnItemsList_WhenRequestCalled&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.SearchClientTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.TeamClientTests.Should_GetListOfTeams&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

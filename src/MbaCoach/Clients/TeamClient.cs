@@ -8,7 +8,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace MbaCoach.Clients;
 
-public class TeamClient(HttpClient client, string baseUri)
+public class TeamClient(HttpClient client, string baseUri) : BaseMbaClient(client, baseUri)
 {
     public async Task<IEnumerable<TeamsResultItem>> GetTeamsAsync(int limit = 500)
     {
@@ -16,10 +16,9 @@ public class TeamClient(HttpClient client, string baseUri)
         return JsonSerializer.Deserialize(response, TeamsResultContext.Default.TeamsResult);
     }
 
-    private async Task<string> GetStringAsync(string url)
+    public async Task<TeamResponse> GetTeam(string teamId, string seasonId)
     {
-        var uriString = Path.Combine(baseUri, url);
-        Uri uri = new Uri(uriString);
-        return await client.GetStringAsync(uri);
+        var response = await GetStringAsync($"teams/{teamId}?seasonId={seasonId}");
+        return JsonSerializer.Deserialize(response, TeamsResponseContext.Default.TeamResponse);
     }
 }

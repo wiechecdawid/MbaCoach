@@ -20,7 +20,7 @@ public class TeamsResultItem
     public string? ContactEmail { get; set; }
     public string? ContactPhone { get; set; }
     public string? Status { get; set; }
-    public string? PrimaryClolour { get; set; }
+    public string? PrimaryColour { get; set; }
     public string? SecondaryColour { get; set; }
     public string? MainTeamId { get; set; }
     public string[]? FarmTeamIds { get; set; }

@@ -3,5 +3,6 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.SearchClientTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.TeamClientTests.Should_GetListOfTeams&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::95B21B2C-6806-C266-6F2A-724F54354582::net10.0::MbaCoach.Tests.E2E.TeamClientTests.Should_GetTeamById&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -32,7 +32,7 @@ public class TeamClientTests
         var team = items.First();
         
         // Act
-        var result = await teamClient.GetTeam(team.Id, season?.Id);
+        var result = await teamClient.GetTeamAsync(team.Id, season?.Id);
         
         // Assert
         Assert.NotNull(result);
